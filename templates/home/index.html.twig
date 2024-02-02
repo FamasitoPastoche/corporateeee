@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home Page
+{% endblock %}
+
+{% block body %}
+
+
+	<section class="infos">
+		<h1>Des
+			<span>gauffres</span>
+			vraiment super cool.</h1>
+		<h4>Découvrez l'art exquis des gaufres avec Grauffr'eto, où chaque bouchée vous transporte dans un monde de saveurs délicates et de croustillant parfait. Faites de chaque moment un festin pour vos papilles avec nos créations uniques et irrésistibles.
+		</h4>
+		<a href="{{ path('app_about') }}">Notre histoire</a>
+	</section>
+	<section class="staffs">
+		<h1>Découvrez
+			<span>nôtre</span>
+			équipe.</h1>
+		<h4>Rencontrez notre équipe : passion, dévouement et excellence à chaque gaufre.
+		</h4>
+		<div class="card-list">
+			<div class="card"><img src="{{asset('imgs/guillaume.jpg')}}" alt="">
+				<h2>Guillaume Feur
+				</h2>
+				<p>Livreur</p>
+			</div>
+			<div class="card"><img src="{{asset('imgs/Aypierre.jpg')}}" alt="">
+				<h2>Aypierre Redstone
+				</h2>
+				<p>Danceur</p>
+			</div>
+			<div class="card"><img src="{{asset('imgs/Alain.jpg')}}" alt="">
+				<h2>Alain Terrieur
+				</h2>
+				<p>Stagiaire</p>
+			</div>
+			<div class="card"><img src="{{asset('imgs/Alex.jpg')}}" alt="">
+				<h2>Alex Terrieur
+				</h2>
+				<p>Tiktokeur</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="story">
+	<h1>Tu veux en
+		<span>savoir</span>
+		plus ?</h1>
+	<h4>Rencontrez notre équipe : passion, dévouement et excellence à chaque gaufre.
+	</h4>
+	<div class="story-box">
+		<img src="{{asset('imgs/pic1.jpg')}}" alt="">
+		<div class="story-text">
+			<h2>Qui somme nous ?</h2>
+			<p>Bienvenue sur Grauffr'eto, votre destination pour des gaufres délicieuses et uniques. Notre entreprise s'engage à offrir une expérience gustative inoubliable à chaque bouchée. Explorez notre gamme de produits faits avec amour et passion. Laissez-nous éveiller vos papilles avec nos créations authentiques et savoureuses. Découvrez l'art de la gaufre avec Grauffr'eto dès aujourd'hui.</p>
+		</div>
+	</div>
+</section>
+<section class="products staffs">
+	<h1>Découvrez nos
+		<span>produits</span>
+		!
+	</h1>
+	<h4>Découvrez nos produits : une symphonie de saveurs exquises.
+	</h4>
+	<div class="card-list">
+		<div class="card"><img src="{{asset('imgs/gauffre1.jpg')}}" alt="">
+			<h2>Gauffre Crème<br>anglaise
+			</h2>
+		</div>
+		<div class="card"><img src="{{asset('imgs/gauffre2.jpg')}}" alt="">
+			<h2>Gauffre Vanille
+			</h2>
+		</div>
+		<div class="card card-none"><img src="{{asset('imgs/none.png')}}" alt="">
+			<a class="button2" href="{{ path('app_products') }}">En voir plus...</a>
+		</div>
+	</div>
+</section>{% endblock %}

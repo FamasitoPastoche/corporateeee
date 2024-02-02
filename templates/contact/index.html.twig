@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact Page
+{% endblock %}
+
+{% block body %}
+
+	<section class="contact-form">
+		<h1>Formulaire de contact</h1>
+		<form action="" method="POST">
+			<label for="nom">Nom :</label><br>
+			<input class="button2" type="text" id="nom" name="nom" required><br>
+			<label for="email">Email :</label><br>
+			<input class="button2" type="email" id="email" name="email" required><br>
+			<label for="message">Message :</label><br>
+			<textarea id="message" name="message" rows="4" required></textarea><br>
+			<input class="button2" type="submit" value="Envoyer">
+		</form>
+	</section>
+	<section class="contact-infos">
+		<h2>Coordonnées de contact</h2>
+		<p>Adresse : 23, rue des cramptés</p>
+		<p>Numéro de téléphone : 04 93 01 90 20
+		</p>
+		<p>Adresse e-mail : contact@gauffreto.com</p>
+	</section>
+{% endblock %}
